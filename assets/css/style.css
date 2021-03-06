@@ -4,6 +4,165 @@
   box-sizing: border-box;
 }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-left {
+  float: left;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.w-50 {
+  width: 50%;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
+  min-width: 1200px;
+}
+
+/* header */
+
+header {
+  position: relative;
+}
+
+header nav {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+/* nav fixed */
+
+header nav.fixed {
+  width: 100%;
+  height: 100px;
+  font-weight: 600;
+  border-bottom: 1px solid black;
+  background-color: #F4F9FD;
+}
+
+header nav.fixed div {
+  display: inline;
+  line-height: 100px;
+}
+
+header nav.fixed div.border-right {
+  border-right: 2px solid gray;
+  padding-right: 20px;
+  margin-right: 20px;
+}
+
+header nav.fixed .header-right {
+  text-align: right;
+}
+
+header nav.fixed .header-right .button {
+  font-size: 80%;
+}
+
+header nav.fixed .header-right .search {
+  color: #10A4BD;
+}
+
+/* nav non-fixed */
+
+header nav.non-fixed {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+}
+
+header nav.non-fixed div {
+  padding-top: 100px;
+  display: inline;
+  line-height: 100px;
+}
+
+header nav.non-fixed .header-right {
+  text-align: right;
+}
+
+/* liste inline */
+
+.inline-menu {
+  list-style: none;
+}
+
+.inline-menu li {
+  display: inline;
+  padding: 0 10px;
+}
+
+/* buttons */
+
+.button {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 5px;
+  line-height: 20px;
+  text-decoration: none;
+  border: 1px solid #FE785A;
+}
+
+.button.empty-button {
+  color: #FE785A;
+}
+
+.button.filled-button {
+  color: white;
+  background-color: #FE785A;
+}
+
+.button.button-small {
+  padding: 10px;
+}
+
+.button.button-big {
+  padding: 20px 40px;
+}
+
+/* jumbotron */
+
+header .jumbotron {
+  height: 650px;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-top: 50px;  
+  color: #33475B;
+  background-position: right;
+  background-repeat: no-repeat;
+  background-image: url('../img/jumbotron.png');
+  background-color: #FFF3EE;
+}
+
+header .jumbotron-text h1 {
+  font-size: 60px;
+}
+
+header .jumbotron-text p,
+header .jumbotron-text h1 {
+  padding-bottom: 30px;
+}
+
+header .jumbotron-text .jumbotron-text-subtitle {
+  font-size: 120%;
+  line-height: 3.5vh;
+}
+
+header .jumbotron-bottom {
+  z-index: 10;
+  position: absolute;
+  top: 789px;
+  height: 61px;
+  width: 100%;
+  border-top: 3px solid #33475B;
+  border-bottom: 3px solid #33475B;;
+  background-color: #AFEBE4;
 }
