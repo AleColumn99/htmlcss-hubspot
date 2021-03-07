@@ -25,7 +25,14 @@
 body {
   font-family: 'Montserrat', sans-serif;
   min-width: 1200px;
+  color: #33475B;
 }
+
+
+
+
+
+
 
 /* header */
 
@@ -135,7 +142,6 @@ header .jumbotron {
   padding-right: 10%;
   padding-left: 10%;
   padding-top: 50px;  
-  color: #33475B;
   background-position: right;
   background-repeat: no-repeat;
   background-image: url('../img/jumbotron.png');
@@ -165,4 +171,111 @@ header .jumbotron-bottom {
   border-top: 3px solid #33475B;
   border-bottom: 3px solid #33475B;;
   background-color: #AFEBE4;
+}
+
+
+
+
+
+
+
+
+/* main */
+
+main .section {
+  padding-right: 10%;
+  padding-left: 10%;
+}
+
+/* top section */
+
+main .section-top {
+  height: 3000px;
+  width: 100%;
+  background-color: #F4F9FD;
+}
+
+/* first block */
+
+main .section-top .first-block {
+  padding-top: 50px;
+  text-align: center;
+  margin: auto;
+}
+
+main .section-top .first-block img {
+  width: 400px;
+}
+
+main .section-top .first-block h1 {
+  font-size: 40px;
+}
+
+main .section-top .first-block p,
+main .section-top .first-block h1 {
+  margin-bottom: 40px;
+}
+
+/* second block */
+
+main .section-top .second-block {
+  text-align: center;
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+
+main .section-top .second-block .block-text,
+main .section-top .second-block .block-img {
+  margin-top: 100px;
+}
+
+main .section-top .second-block .block-text {
+  position: relative;
+  width: 70%;
+  padding-right: 10%;
+  text-align: left;
+}
+
+main .section-top .second-block .block-text h2 {
+  margin-bottom: 40px;
+}
+
+main .section-top .second-block .block-text p {
+  margin-right: 30%;
+}
+
+main .section-top .second-block .block-text .horiz-line {
+  width: 72%;
+  height: 2px;
+  margin-left: 50px;
+  margin-top: 10px;
+  background-color: #899397;
+}
+
+main .section-top .second-block .block-text ul {
+  margin-top: 100px;
+  margin-left: 0px;
+}
+
+main .section-top .second-block .block-text ul li i {
+  color: #FE785A;
+}
+
+main .section-top .second-block .block-text p,
+main .section-top .second-block .block-text h3,
+main .section-top .second-block .block-text ul {
+  margin-bottom: 30px;
+}
+
+main .section-top .second-block .block-img {
+  width: 30%;
+}
+
+main .section-top .second-block .block-img img {
+  width: 150px;
+  margin-bottom: 30px;
 }
